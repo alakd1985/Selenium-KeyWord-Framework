@@ -9,9 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ActionKeyWord {
-	private static WebDriver driver = null;
+	// private static WebDriver driver = null;
+	public static WebDriver driver;
 
-	public static void openBrowser() {
+	public void openBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 	}
