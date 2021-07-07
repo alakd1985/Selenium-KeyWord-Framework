@@ -12,7 +12,7 @@ public class ActionKeyWord {
 	// private static WebDriver driver = null;
 	public static WebDriver driver;
 
-	public void openBrowser() {
+	public static void openBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 	}
